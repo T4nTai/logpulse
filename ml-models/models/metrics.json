@@ -1,0 +1,31 @@
+{
+  "model": "IsolationForest",
+  "n_features": 6,
+  "features": [
+    "log_count",
+    "info_count",
+    "warn_count",
+    "unique_components",
+    "unique_pids",
+    "duration_sec"
+  ],
+  "n_rows": 575061,
+  "n_estimators": 200,
+  "contamination": 0.0293,
+  "label_source": "anomaly_label.csv (HDFS_v1 ground truth)",
+  "n_anomaly_true": 16838,
+  "n_flagged": 16595,
+  "train_seconds": 18.95,
+  "inference_seconds": 17.73,
+  "precision": 0.4706,
+  "recall": 0.4638,
+  "f1": 0.4672,
+  "average_precision": 0.234,
+  "roc_auc": 0.9703,
+  "confusion_matrix": {
+    "tn": 549438,
+    "fp": 8785,
+    "fn": 9028,
+    "tp": 7810
+  }
+}

@@ -1,0 +1,51 @@
+# Secrets
+.env
+backend/.env
+*.key
+*.pem
+*.secret
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+*.egg-info/
+.mypy_cache/
+.pytest_cache/
+
+# Data (large/derived — regenerate with scripts/load_hdfs.py, cluster_logs.py, train_anomaly.py)
+data/*.db
+data/*.db-shm
+data/*.db-wal
+data/sorted.log
+data/anomaly_label.csv
+data/features.csv
+data/top_anomalies.csv
+
+# ML artifacts
+ml-models/models/anomaly_detector.pkl
+ml-models/.venv/
+drain3_state.bin
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+data/loghub/
+
+# Local-only working files (keep on disk, never commit)
+ROADMAP.md
+check_hdfs_full.py
+backend/scripts/
